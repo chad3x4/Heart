@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+    <title>Heart Shape</title>
+    <META NAME="Generator" CONTENT="EditPlus">
+    <META NAME="Author" CONTENT="">
+    <META NAME="Keywords" CONTENT="">
+    <META NAME="Description" CONTENT="">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Love Ya Like A Sister'/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="heart.js"></script>
+</head>
+<body onload=init()>
+    <p id="message">YOU</p>
+    <canvas id="pinkboard">
+    </canvas>
+    <canvas id="myCanvas" width="10" height="10"></canvas>
+    <script>
+      const canvas = document.getElementById('myCanvas');
+      const context = canvas.getContext('2d');
+      const dotRadius = 1;
+      const dotColor = '#c0392b';
+      const centerX = canvas.width / 2;
+      const centerY = canvas.height / 2;
+
+      context.beginPath();
+      context.arc(centerX, centerY, dotRadius, 0, 2 * Math.PI, false);
+      context.fillStyle = dotColor;
+      context.fill();
+    </script>
+</body>
+ 
+</html>
