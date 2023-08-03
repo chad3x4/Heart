@@ -1,4 +1,3 @@
-# Heart-for-T
-Mah heart beats for u
+# Heart-JS
 
 ![image](preview.png)
